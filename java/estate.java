@@ -19,5 +19,6 @@ public class estate {
 		while((input = scan.nextInt()) != 0) {
 			System.out.println(options[input - 1]);
 		}
+		scan.close();
 	}
 }
