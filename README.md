@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-Solution to problems on http://open.kattis.com in java
+Solution to problems on https://open.kattis.com in java
 
 Feel free to learn and code
 
