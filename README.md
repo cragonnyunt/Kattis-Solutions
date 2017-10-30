@@ -6,4 +6,4 @@ Feel free to learn and code
 
 Don't just copy it :') :')
 
-More new solutions will be added soon
+More new solutions are going be added soon
