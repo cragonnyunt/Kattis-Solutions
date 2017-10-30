@@ -13,7 +13,6 @@ public class magical3 {
 		int input;
 		while ((input = scan.nextInt()) != 0) {
 			int _base = -1;
-
 			input -= 3;
 			if (input == 0)
 				_base = 4;
@@ -50,12 +49,10 @@ public class magical3 {
 					}
 				}
 			}
-
 			if (_base == -1)
 				System.out.println("No such base");
 			else
 				System.out.println(_base);
-
 		}
 		scan.close();
 	}
