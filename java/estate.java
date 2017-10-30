@@ -5,12 +5,12 @@ public class estate {
 	
 	static {
 		int count = 1;
-        for(int i = 2; i < options.length; i += count + 1)
-        {
-            for (int j = i; j < options.length; j += count)
-            	options[j - 1]++;
-            count++;
-        }
+		for(int i = 2; i < options.length; i += count + 1)
+		{
+		    for (int j = i; j < options.length; j += count)
+			options[j - 1]++;
+		    count++;
+		}
 	}
 	
 	public static void main(String[] args) {
