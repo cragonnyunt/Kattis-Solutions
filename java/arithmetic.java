@@ -10,8 +10,7 @@ public class arithmetic {
 			sb.append(("000" + binary_str).substring(binary_str.length()));
 		}
 		int length = sb.length() + 4 - sb.length() % 4;
-		String s = (new String(new char[length]).replace("\0", "0") + sb).substring(sb.length());
-		return s;
+		return (new String(new char[length]).replace("\0", "0") + sb).substring(sb.length());
 	}
 
 	static String toHex(String binary) {
