@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Kattis Solutions
 
 Solution to problems on https://open.kattis.com in java
 
