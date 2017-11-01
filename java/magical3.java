@@ -1,13 +1,6 @@
 import java.util.Scanner;
 
 public class magical3 {
-	static boolean isPrime(int number) {
-		for (int i = 2; i <= Math.ceil(Math.sqrt(number)); i++)
-			if (number % i == 0)
-				return false;
-		return true;
-	}
-
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int input;
@@ -26,7 +19,13 @@ public class magical3 {
 							break;
 						} else {
 							int factor = input / i;
-							if (isPrime(factor) && factor >= 4) {
+							boolean isFactorPrime = true;
+							for (int j = 2; j <= Math.ceil(Math.sqrt(factor)); j++)
+								if (factor % j == 0) {
+									isFactorPrime = false;
+									break;
+								}
+							if (isFactorPrime && factor >= 4) {
 								_base = factor;
 								break;
 							}
