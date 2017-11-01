@@ -27,5 +27,6 @@ public class judging {
 				count += Math.min(domJudge.get(s), kattisJudge.get(s));
 		}
 		System.out.println(count);
+		scan.close();
 	}
 }
