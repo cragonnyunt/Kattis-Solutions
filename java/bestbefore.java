@@ -23,7 +23,7 @@ public class bestbefore {
 		boolean isValid = false;
 		for (best_date _d : d) {
 			if (_d.isValid()) {
-				System.out.println(_d.toString());
+				System.out.println(_d);
 				isValid = true;
 				break;
 			}
