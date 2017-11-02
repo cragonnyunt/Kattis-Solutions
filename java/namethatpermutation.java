@@ -7,7 +7,7 @@ public class namethatpermutation {
 	static {
 		factorials[0] = new BigInteger("1");
 		for (int i = 1; i < 50; i++)
-			factorials[i] = factorials[i - 1].multiply(new BigInteger(String.valueOf(i + 1)));
+			factorials[i] = factorials[i - 1].multiply(BigInteger.valueOf(i + 1));
 	}
 
 	public static void main(String[] args) {
