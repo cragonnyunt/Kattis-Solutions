@@ -12,7 +12,7 @@ public class lektira {
 			return new StringBuilder(str).reverse().toString();
 		else {
 			String test_str = str.substring(0, str.length() - pos);
-			char minChar = '\uFFFF';
+			char minChar = Character.MIN_VALUE;
 			for (char ch : test_str.toCharArray()) {
 				if (Character.compare(minChar, ch) > 0)
 					minChar = ch;
