@@ -15,11 +15,14 @@ public class ada {
 		scan.close();
 	}
 
-	static int getDistinctCount(int[] vList) {
-		HashSet<Integer> tmpSet = new HashSet<>();
-		for(int i : vList)
-			tmpSet.add(i);
-		return tmpSet.size();
+	static boolean getDistinctCountIsOne(int[] vList) {
+		int preV = vList[0];
+		for(int i = 1; i < vList.length; i++)
+		{
+			if(preV != vList[i])
+				return false;
+		}
+		return true;
 	}
 
 	static int getDegree(int[] vList) {
@@ -27,7 +30,7 @@ public class ada {
 		int[] newvList = new int[_n];
 		for (int i = 0; i < _n; i++)
 			newvList[i] = vList[i + 1] - vList[i];
-		if (newvList.length == 1 || getDistinctCount(newvList) == 1) {
+		if (newvList.length == 1 || getDistinctCountIsOne(newvList)) {
 			next = newvList[0];
 			return 1;
 		} else {
