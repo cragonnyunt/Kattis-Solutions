@@ -13,17 +13,17 @@ public class bestbefore {
 		int max = input_date[2];
 		int mid = input_date[1];
 		int min = input_date[0];
-		best_date[] d = new best_date[6];
-		d[0] = new best_date(min, mid, max);
-		d[1] = new best_date(min, max, mid);
-		d[2] = new best_date(mid, min, max);
-		d[3] = new best_date(mid, max, min);
-		d[4] = new best_date(max, min, mid);
-		d[5] = new best_date(max, mid, min);
+		best_date[] dates = new best_date[6];
+		dates[0] = new best_date(min, mid, max);
+		dates[1] = new best_date(min, max, mid);
+		dates[2] = new best_date(mid, min, max);
+		dates[3] = new best_date(mid, max, min);
+		dates[4] = new best_date(max, min, mid);
+		dates[5] = new best_date(max, mid, min);
 		boolean isValid = false;
-		for (best_date _d : d) {
-			if (_d.isValid()) {
-				System.out.println(_d);
+		for (best_date d : dates) {
+			if (d.isValid()) {
+				System.out.println(d);
 				isValid = true;
 				break;
 			}
