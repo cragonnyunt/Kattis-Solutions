@@ -13,7 +13,7 @@ public class metaprogramming {
 				int x = Integer.parseInt(command_split[1]);
 				String var = command_split[2];
 				meta.put(var, x);
-			} else if (cmd_type.equals("eval")) {
+			} else {
 				if (!meta.containsKey(command_split[1]) || !meta.containsKey(command_split[3]))
 					System.out.println("undefined");
 				else {
