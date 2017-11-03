@@ -22,10 +22,10 @@ public class metaprogramming {
 					int z = meta.get(command_split[3]);
 					if (y.equals("<"))
 						System.out.println(x < z);
-					else if (y.equals("="))
-						System.out.println(x == z);
 					else if (y.equals(">"))
 						System.out.println(x > z);
+					else
+						System.out.println(x == z);
 				}
 			}
 		}
