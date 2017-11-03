@@ -57,8 +57,8 @@ public class chess {
 
 	static boolean find_mid_chess_field(int new_X_col, int new_X_row, char _X_col, int _X_row, int Y_col, int Y_row) {
 		if (new_X_col + new_X_row == Y_col + Y_row || Y_col - new_X_col == Y_row - new_X_row) {
-			System.out.println("2 " + _X_col + " " + _X_row + " " + toCol(new_X_col) + " "
-					+ toRow(new_X_row) + " " + toCol(Y_col) + " " + toRow(Y_row));
+			System.out.println("2 " + _X_col + " " + _X_row + " " + toCol(new_X_col) + " " + toRow(new_X_row) + " "
+					+ toCol(Y_col) + " " + toRow(Y_row));
 			return true;
 		}
 		return false;
