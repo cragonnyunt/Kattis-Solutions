@@ -27,19 +27,19 @@ public class chess2 {
 				else {
 					boolean isFound = false;
 					for (int i = 1; X_row + i <= 7 && X_col + i <= 7; i++)
-						if (isFound = find_mid_chess_field(X_col + i, X_row + i, X_col, X_row, Y_col, Y_row))
+						if (isFound = find_mid_chess_field(X_col + i, X_row + i, _X_col, _X_row, Y_col, Y_row))
 							break;
 					if (!isFound)
 						for (int i = 1; X_row - i >= 0 && X_col - i >= 0; i++)
-							if (isFound = find_mid_chess_field(X_col - i, X_row - i, X_col, X_row, Y_col, Y_row))
+							if (isFound = find_mid_chess_field(X_col - i, X_row - i, _X_col, _X_row, Y_col, Y_row))
 								break;
 					if (!isFound)
 						for (int i = 0; X_row + i <= 7 && X_col - i >= 0; i++)
-							if (isFound = find_mid_chess_field(X_col - i, X_row + i, X_col, X_row, Y_col, Y_row))
+							if (isFound = find_mid_chess_field(X_col - i, X_row + i, _X_col, _X_row, Y_col, Y_row))
 								break;
 					if (!isFound)
 						for (int i = 0; X_row - i >= 0 && X_col + i <= 7; i++)
-							if (isFound = find_mid_chess_field(X_col + i, X_row - i, X_col, X_row, Y_col, Y_row))
+							if (isFound = find_mid_chess_field(X_col + i, X_row - i, _X_col, _X_row, Y_col, Y_row))
 								break;
 				}
 			}
@@ -55,9 +55,9 @@ public class chess2 {
 		return 8 - row;
 	}
 
-	static boolean find_mid_chess_field(int new_X_col, int new_X_row, int X_col, int X_row, int Y_col, int Y_row) {
+	static boolean find_mid_chess_field(int new_X_col, int new_X_row, char _X_col, int _X_row, int Y_col, int Y_row) {
 		if (new_X_col + new_X_row == Y_col + Y_row || Y_col - new_X_col == Y_row - new_X_row) {
-			System.out.println("2 " + toCol(X_col) + " " + toRow(X_row) + " " + toCol(new_X_col) + " "
+			System.out.println("2 " + _X_col + " " + _X_row + " " + toCol(new_X_col) + " "
 					+ toRow(new_X_row) + " " + toCol(Y_col) + " " + toRow(Y_row));
 			return true;
 		}
