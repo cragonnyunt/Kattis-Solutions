@@ -25,6 +25,6 @@ public class enlarginghashtables {
 				}
 			System.out.println(nextPrime + (!isPrime(n) ? " (" + n + " is not prime)" : ""));
 		}
-		scan.close()
+		scan.close();
 	}
 }
