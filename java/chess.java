@@ -1,102 +1,66 @@
-import java.util.HashSet;
 import java.util.Scanner;
 
-public class chess {
-	static HashSet<chess_field> getDiagonals(chess_field cf) {
-		HashSet<chess_field> diagonals = new HashSet<>();
-		for (int i = 1; cf.row + i < 8 && cf.column + i < 8; i++)
-			diagonals.add(new chess_field(cf.row + i, cf.column + i));
-		for (int i = 1; cf.row - i >= 0 && cf.column - i >= 0; i++)
-			diagonals.add(new chess_field(cf.row - i, cf.column - i));
-		for (int i = 0; cf.row + i < 8 && cf.column - i >= 0; i++)
-			diagonals.add(new chess_field(cf.row + i, cf.column - i));
-		for (int i = 0; cf.row - i >= 0 && cf.column + i < 8; i++)
-			diagonals.add(new chess_field(cf.row - i, cf.column + i));
-		return diagonals;
-	}
-
+public class chess2 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int T = scan.nextInt();
 		while (T-- > 0) {
-			String X_col = scan.next();
-			int X_row = scan.nextInt();
-			String Y_col = scan.next();
-			int Y_row = scan.nextInt();
-			chess_field X = new chess_field(X_row, X_col);
-			chess_field Y = new chess_field(Y_row, Y_col);
-			if (X.compareTo(Y) == 0)
-				System.out.println("0 " + X);
+			char _X_col = scan.next().charAt(0);
+			int _X_row = scan.nextInt();
+			char _Y_col = scan.next().charAt(0);
+			int _Y_row = scan.nextInt();
+
+			int X_col = _X_col - 'A';
+			int X_row = 8 - _X_row;
+			int Y_col = _Y_col - 'A';
+			int Y_row = 8 - _Y_row;
+
+			if (X_col == Y_col && X_row == Y_row)
+				System.out.println("0 " + _X_col + " " + _X_row);
 			else {
-				HashSet<chess_field> diagonals_X = getDiagonals(X);
-				if (diagonals_X.contains(Y))
-					System.out.println("1 " + X + " " + Y);
+				int X_sum = X_col + X_row;
+				int Y_sum = Y_col + Y_row;
+				if ((X_sum + Y_sum) % 2 == 1)
+					System.out.println("Impossible");
+				else if (X_sum == Y_sum || Y_col - X_col == Y_row - X_row)
+					System.out.println("1 " + _X_col + " " + _X_row + " " + _Y_col + " " + _Y_row);
 				else {
-					HashSet<chess_field> diagonals_Y = getDiagonals(Y);
-					diagonals_X.retainAll(diagonals_Y);
-					if (diagonals_X.isEmpty())
-						System.out.println("Impossible");
-					else {
-						chess_field mid_field = new chess_field(0, 0);
-						for (chess_field s : diagonals_X)
-							mid_field = s;
-						System.out.println("2 " + X + " " + mid_field + " " + Y);
-					}
+					boolean isFound = false;
+					for (int i = 1; X_row + i < 8 && X_col + i < 8; i++)
+						if (isFound = find_mid_chess_field(X_col + i, X_row + i, X_col, X_row, Y_col, Y_row))
+							break;
+					if (!isFound)
+						for (int i = 1; X_row - i >= 0 && X_col - i >= 0; i++)
+							if (isFound = find_mid_chess_field(X_col - i, X_row - i, X_col, X_row, Y_col, Y_row))
+								break;
+					if (!isFound)
+						for (int i = 0; X_row + i < 8 && X_col - i >= 0; i++)
+							if (isFound = find_mid_chess_field(X_col - i, X_row + i, X_col, X_row, Y_col, Y_row))
+								break;
+					if (!isFound)
+						for (int i = 0; X_row - i >= 0 && X_col + i < 8; i++)
+							if (isFound = find_mid_chess_field(X_col + i, X_row - i, X_col, X_row, Y_col, Y_row))
+								break;
 				}
 			}
 		}
 		scan.close();
 	}
-}
 
-class chess_field implements Comparable<chess_field> {
-	public int row, column;
+	static char toCol(int col) {
+		return (char) ('A' + col);
+	}
 
-	public int getRow() {
+	static int toRow(int row) {
 		return 8 - row;
 	}
 
-	public void setRow(int row) {
-		this.row = 8 - row;
-	}
-
-	public char getCol() {
-		return (char) ('A' + column);
-	}
-
-	public void setCol(String column) {
-		this.column = column.charAt(0) - 'A';
-	}
-
-	public chess_field(int row, String column) {
-		setCol(column);
-		setRow(row);
-	}
-
-	public chess_field(int row, int column) {
-		this.row = row;
-		this.column = column;
-	}
-
-	public String toString() {
-		return getCol() + " " + getRow();
-	}
-
-	public int compareTo(chess_field o) {
-		int row_difference;
-		return (row_difference = row - o.row) == 0 ? column - o.column : row_difference;
-	}
-
-	@Override
-	public boolean equals(Object other) {
-		return compareTo((chess_field) other) == 0;
-	}
-
-	@Override
-	public int hashCode() {
-		long hash = 13L;
-		hash = (hash * 7) + row;
-		hash = (hash * 7) + column;
-		return (int) (2 ^ hash);
+	static boolean find_mid_chess_field(int new_X_col, int new_X_row, int X_col, int X_row, int Y_col, int Y_row) {
+		if (new_X_col + new_X_row == Y_col + Y_row || Y_col - new_X_col == Y_row - new_X_row) {
+			System.out.println("2 " + toCol(X_col) + " " + toRow(X_row) + " " + toCol(new_X_col) + " "
+					+ toRow(new_X_row) + " " + toCol(Y_col) + " " + toRow(Y_row));
+			return true;
+		}
+		return false;
 	}
 }
