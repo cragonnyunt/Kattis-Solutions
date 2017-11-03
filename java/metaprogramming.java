@@ -7,8 +7,7 @@ public class metaprogramming {
         HashMap<String, Integer> meta = new HashMap<>();
         while (scan.hasNextLine()) {
             String[] command_split = scan.nextLine().split(" ");
-            String cmd_type = command_split[0];
-            if (cmd_type.equals("define")) {
+            if (command_split[0].equals("define")) {
                 int x = Integer.parseInt(command_split[1]);
                 String var = command_split[2];
                 meta.put(var, x);
