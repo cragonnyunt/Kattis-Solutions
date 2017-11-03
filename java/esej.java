@@ -1,5 +1,5 @@
 import java.util.Random;
-import java.util.Scanner
+import java.util.Scanner;
 
 public class esej {
 	public static void main(String[] args) {
