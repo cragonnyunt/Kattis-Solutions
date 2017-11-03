@@ -26,7 +26,7 @@ public class chess2 {
 					System.out.println("1 " + _X_col + " " + _X_row + " " + _Y_col + " " + _Y_row);
 				else {
 					boolean isFound = false;
-					for (int i = 1; X_row + i < 8 && X_col + i < 8; i++)
+					for (int i = 1; X_row + i <= 7 && X_col + i <= 7; i++)
 						if (isFound = find_mid_chess_field(X_col + i, X_row + i, X_col, X_row, Y_col, Y_row))
 							break;
 					if (!isFound)
@@ -34,11 +34,11 @@ public class chess2 {
 							if (isFound = find_mid_chess_field(X_col - i, X_row - i, X_col, X_row, Y_col, Y_row))
 								break;
 					if (!isFound)
-						for (int i = 0; X_row + i < 8 && X_col - i >= 0; i++)
+						for (int i = 0; X_row + i <= 7 && X_col - i >= 0; i++)
 							if (isFound = find_mid_chess_field(X_col - i, X_row + i, X_col, X_row, Y_col, Y_row))
 								break;
 					if (!isFound)
-						for (int i = 0; X_row - i >= 0 && X_col + i < 8; i++)
+						for (int i = 0; X_row - i >= 0 && X_col + i <= 7; i++)
 							if (isFound = find_mid_chess_field(X_col + i, X_row - i, X_col, X_row, Y_col, Y_row))
 								break;
 				}
