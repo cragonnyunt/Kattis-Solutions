@@ -15,7 +15,7 @@ public class artichoke {
 			double price = p * (Math.sin(a * i + b) + Math.cos(c * i + d) + 2);
 			if (prevMax > price)
 				maxDecline = Math.max(maxDecline, prevMax - price);
-			else if (prevMax < price)
+			else
 				prevMax = price;
 		}
 		System.out.println(maxDecline);
