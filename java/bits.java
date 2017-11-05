@@ -16,7 +16,6 @@ public class bits {
 			}
 			length *= 2;
 		}
-
 		for (int i = 10; i < bits.length; i++)
 			bits[i] = Math.max(bits[i], bits[i / 10]);
 	}
