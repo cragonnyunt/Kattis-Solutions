@@ -5,8 +5,7 @@ public class bits {
 	static {
 		int length = 1;
 		for (int i = 0; i < 16; i++) {
-			int add = (int) Math.pow(2, i + 1);
-			for (int j = length; j < bits.length; j += add) {
+			for (int j = length; j < bits.length; j += Math.pow(2, i + 1)) {
 				int count = 0;
 				int index = j;
 				while (count < length && index < bits.length) {
