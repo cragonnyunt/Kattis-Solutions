@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class eightqueens {
-	static boolean[][] board = new boolean[8][8];
+	static final boolean[][] board = new boolean[8][8];
 
 	static boolean check_board() {
 		for (int i = 0; i < 8; i++) {
