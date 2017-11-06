@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class recenice {
-	static int[] neededCount = new int[1000];
-	static String[] NameDec = new String[] { "", "one", "two", "three", "four", "five", "six", "seven", "eight",
+	static final int[] neededCount = new int[1000];
+	static final String[] NameDec = new String[] { "", "one", "two", "three", "four", "five", "six", "seven", "eight",
 			"nine" };
-	static String[] Name10s = new String[] { "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
+	static final String[] Name10s = new String[] { "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
 			"seventeen", "eighteen", "nineteen" };
-	static String[] NameDD = new String[] { "", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy",
+	static final String[] NameDD = new String[] { "", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy",
 			"eighty", "ninety" };
 	static {
 		for (int i = 4; i < neededCount.length; i++) {
