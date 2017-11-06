@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class consecutivesums {
-	static HashMap<Integer, Integer> partial_sums = new HashMap<>(565);
+	static final HashMap<Integer, Integer> partial_sums = new HashMap<>(565);
 
 	static {
 		int N;
