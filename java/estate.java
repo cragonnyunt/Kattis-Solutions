@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class estate {
-	static int[] options = new int[1000000];
+	static final int[] options = new int[1000000];
 
 	static {
 		int count = 1;
