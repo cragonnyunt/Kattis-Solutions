@@ -1,7 +1,7 @@
 import java.util.Scanner;;
 
 public class howmanydigits {
-	static double[] bases = new double[1000001];
+	static final double[] bases = new double[1000001];
 
 	static {
 		bases[0] = bases[1] = 1;
