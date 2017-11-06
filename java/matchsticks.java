@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class matchsticks {
-	static String[] smallest = new String[99];
+	static final String[] smallest = new String[99];
 	static {
 		smallest[0] = "1";
 		smallest[1] = "7";
