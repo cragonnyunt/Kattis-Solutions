@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class base2palindrome {
-	static int[] array = { 0, 1, 2, 4, 6, 10, 14, 22, 30, 46, 62, 94, 126, 190, 254, 382, 510, 766, 1022, 1534, 2046,
+	static final int[] array = { 0, 1, 2, 4, 6, 10, 14, 22, 30, 46, 62, 94, 126, 190, 254, 382, 510, 766, 1022, 1534, 2046,
 			3070, 4094, 6142, 8190, 12286, 16382, 24574, 32766, 49150, 65534 };
 
 	static String getBinary(double bits, int n) {
