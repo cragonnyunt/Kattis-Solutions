@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class calculatingdartscores {
@@ -5,8 +6,7 @@ public class calculatingdartscores {
 	static int[][] dartArea = new int[27][3];
 	static final String[] area = { "single", "double", "triple" };
 	static {
-		for(int i = 0; i < dart.length; i++)
-			dart[i] = "impossible";
+		Arrays.fill(dart, "impossible");
 		int count = 0;
 		for (int a = 1; a <= 3; a++)
 			for (int b = 1; b <= 3; b++)
