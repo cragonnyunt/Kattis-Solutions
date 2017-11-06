@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class wertyu {
-	static String[] keyboard = new String[4];
+	static final String[] keyboard = new String[4];
 	static {
 		keyboard[0] = "`1234567890-=";
 		keyboard[1] = "QWERTYUIOP[]\\";
