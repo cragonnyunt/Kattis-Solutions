@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class namethatpermutation {
-	static BigInteger[] factorials = new BigInteger[50];
+	static final BigInteger[] factorials = new BigInteger[50];
 	static {
 		factorials[0] = new BigInteger("1");
 		for (int i = 1; i < 50; i++)
