@@ -5,6 +5,8 @@ public class calculatingdartscores {
 	static int[][] dartArea = new int[27][3];
 	static final String[] area = { "single", "double", "triple" };
 	static {
+		for(int i = 0; i < dart.length; i++)
+			dart[i] = "impossible";
 		int count = 0;
 		for (int a = 1; a <= 3; a++)
 			for (int b = 1; b <= 3; b++)
@@ -21,7 +23,7 @@ public class calculatingdartscores {
 						int b = i[1];
 						int c = i[2];
 						int dartScore = x3 * a + x2 * b + x1 * c;
-						if (dart[dartScore] == null) {
+						if (dart[dartScore] == "impossible") {
 							StringBuilder sb = new StringBuilder();
 							if (x3 != 0)
 								sb.append(String.format("%s %d\n", area[a - 1], x3));
@@ -38,11 +40,7 @@ public class calculatingdartscores {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
-		String d = dart[n];
-		if (d == null)
-			System.out.println("impossible");
-		else
-			System.out.println(d);
+		System.out.println(dart[n]);
 		scan.close();
 	}
 }
