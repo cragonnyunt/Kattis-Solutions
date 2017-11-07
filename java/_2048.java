@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class _2048 {
-	static int[][] tiles = new int[4][4];
+	static final int[][] tiles = new int[4][4];
 
 	static void MergeCells(int[][] tiles, int row, int col, int row_diff, int col_diff) {
 		if (tiles[row][col] == tiles[row + row_diff][col + col_diff]) {
