@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class eightqueens {
+public class _8queens {
 	static final boolean[][] board = new boolean[8][8];
 
 	static boolean check_board() {
