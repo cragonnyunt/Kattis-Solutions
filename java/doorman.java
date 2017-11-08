@@ -30,7 +30,7 @@ public class doorman {
 					letinPeople(queue.charAt(index), index);
 				index++;
 			} else if (difference == X) {
-				if (Math.abs(index - maxIndex) > 2)
+				if (index - maxIndex > 2)
 					break;
 				if (moreGender != queue.charAt(index) && !trackedIndex.contains(index)) {
 					letinPeople(queue.charAt(index), index);
