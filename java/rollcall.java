@@ -14,22 +14,22 @@ public class rollcall {
 		for (int i = 0; i < roll.size(); i++) {
 			boolean hasSameFirstName = false;
 			for (int j = 0; j < roll.size(); j++) {
-				if (j != i && roll.get(i).isSameFirstName(roll.get(j))) {
+				if (j != i && roll.get(i).first_name.equals(roll.get(j).first_name)) {
 					hasSameFirstName = true;
 					break;
 				}
 			}
-			if(!hasSameFirstName)
-				roll.get(i).clearLastName();
+			if (!hasSameFirstName)
+				roll.get(i).last_name = "";
 		}
-		for(Name n : roll)
+		for (Name n : roll)
 			System.out.println(n);
 		scan.close();
 	}
 }
 
 class Name implements Comparable<Name> {
-	String first_name, last_name;
+	public String first_name, last_name;
 
 	public Name(String first_name, String last_name) {
 		this.first_name = first_name;
@@ -41,14 +41,6 @@ class Name implements Comparable<Name> {
 			return last_name.compareTo(o.last_name);
 		else
 			return first_name.compareTo(o.first_name);
-	}
-
-	public boolean isSameFirstName(Name o) {
-		return first_name.equals(o.first_name);
-	}
-
-	public void clearLastName() {
-		last_name = "";
 	}
 
 	public String toString() {
