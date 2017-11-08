@@ -8,12 +8,11 @@ public class irepeatmyself {
 		while (n-- > 0) {
 			String str = scan.nextLine();
 			int length = str.length();
-			for (int i = 1; i < length; i++) {
+			for (int i = 1; i < length; i++)
 				if (str.startsWith(str.substring(i))) {
 					length = i;
 					break;
 				}
-			}
 			System.out.println(length);
 		}
 		scan.close();
