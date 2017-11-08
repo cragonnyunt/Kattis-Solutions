@@ -29,7 +29,7 @@ public class busnumbers {
 		StringBuilder sb = new StringBuilder();
 		for (i = 0; i < bus_list.size(); i++) {
 			sb.append(bus_list.get(i));
-			if (i != bus_list.size() - 1 && bus_list.get(i) != "-" && !bus_list.get(i + 1).equals("-"))
+			if (i != bus_list.size() - 1 && !bus_list.get(i).equals("-") && !bus_list.get(i + 1).equals("-"))
 				sb.append(" ");
 		}
 		System.out.println(sb);
