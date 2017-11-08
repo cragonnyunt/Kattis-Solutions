@@ -12,10 +12,9 @@ public class haypoints {
 		while (n-- > 0) {
 			int total_salary = 0;
 			String job;
-			while (!(job = scan.next()).equals(".")) {
+			while (!(job = scan.next()).equals("."))
 				if (salary.containsKey(job))
 					total_salary += salary.get(job);
-			}
 			System.out.println(total_salary);
 		}
 		scan.close();
