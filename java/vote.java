@@ -12,8 +12,7 @@ public class vote {
 			int maxIndex = -1;
 			boolean hasTwoMax = false;
 			for (int i = 0; i < count; i++) {
-				votes[i] = scan.nextInt();
-				sumVote += votes[i];
+				sumVote += (votes[i] = scan.nextInt());
 				if (maxVote < votes[i]) {
 					maxVote = votes[i];
 					maxIndex = i + 1;
