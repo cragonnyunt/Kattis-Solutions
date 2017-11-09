@@ -2,7 +2,7 @@
 
 Solution to problems on [Kattis](https://open.kattis.com) in java
 
-<b>Everyone is free to learn and code</b>
+**Everyone is free to learn and code**
 
 >Don't just copy it :') :')
 
