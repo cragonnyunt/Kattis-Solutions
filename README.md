@@ -11,7 +11,8 @@ More new solutions are going be added soon
 [Go to my Kattis Profile](https://open.kattis.com/users/khin-nyunt)
 
 ---
-Note 1 : Java don't allow class name to start with digits. Problem IDs starting with digits are preceded by underscore(_). e.g. _2048.java instead of 2048.java
+*Notes
+1. : Java don't allow class name to start with digits. Problem IDs starting with digits are preceded by underscore(_). e.g. _2048.java instead of 2048.java
 
+2. : Some problems with low CPU time limit will be solved in C++. Sorry for this as it is impossible to do within enough time limit in Java. 
 ---
-Note 2 : Some problems with low CPU time limit will be solved in C++. Sorry for this as it is impossible to do within enough time limit in Java. 
