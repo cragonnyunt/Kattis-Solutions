@@ -1,6 +1,6 @@
 ## Welcome to Kattis Solutions
 
-Solution to problems on https://open.kattis.com in java
+Solution to problems on [Kattis](https://open.kattis.com) in java
 
 Everyone is free to learn and code
 
