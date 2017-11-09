@@ -4,7 +4,7 @@ Solution to problems on [Kattis](https://open.kattis.com) in java
 
 Everyone is free to learn and code
 
-Don't just copy it :') :')
+>Don't just copy it :') :')
 
 More new solutions are going be added soon
 
