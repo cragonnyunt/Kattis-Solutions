@@ -8,7 +8,7 @@ public class hidden {
 		for (char c : data.toCharArray())
 			if (password.contains(String.valueOf(c)))
 				if (password.charAt(0) == c)
-					password = password.length() > 1 ? password.substring(1) : "";
+					password = password.substring(1);
 				else
 					break;
 		if (password.isEmpty())
