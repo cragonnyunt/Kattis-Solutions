@@ -98,10 +98,7 @@ public class allaboutthatbase {
 						sb.append(allBaseType[currentBaseType - 1]);
 				}
 			}
-			if (sb.length() == 0)
-				System.out.println("Invalid");
-			else
-				System.out.println(sb);
+			System.out.println(sb.length() == 0 ? "Invalid" : sb);
 		}
 		scan.close();
 	}
