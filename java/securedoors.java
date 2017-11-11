@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class securedoors {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		HashSet<String> room = new HashSet<>();
 		int n = scan.nextInt();
+		HashSet<String> room = new HashSet<>(n);
 		while (n-- > 0) {
 			switch (scan.next()) {
 			case "entry":
