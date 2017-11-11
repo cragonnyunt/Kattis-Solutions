@@ -11,10 +11,7 @@ public class hidden {
 					password = password.substring(1);
 				else
 					break;
-		if (password.isEmpty())
-			System.out.println("PASS");
-		else
-			System.out.println("FAIL");
+		System.out.println(password.isEmpty() ? "PASS" : "FAIL");
 		scan.close();
 	}
 }
