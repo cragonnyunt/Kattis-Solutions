@@ -6,7 +6,7 @@ Solution to problems on [Kattis](https://open.kattis.com) in java
 
 >Don't just ~~copy~~ 🤣🤣
 
-More new solutions are going be added soon
+More new solutions are going to be added soon
 
 [Go to my Kattis Profile](https://open.kattis.com/users/khin-nyunt)
 
