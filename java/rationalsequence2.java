@@ -21,7 +21,7 @@ public class rationalsequence2 {
 			String n = scan.next();
 			int p = Integer.parseInt(n.split("/")[0]);
 			int q = Integer.parseInt(n.split("/")[1]);
-			System.out.println(K + " " + getN(p, q));
+			System.out.printf("%d %d", K, getN(p, q));
 		}
 		scan.close();
 	}
