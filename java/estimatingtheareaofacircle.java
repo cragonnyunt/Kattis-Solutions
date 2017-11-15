@@ -8,7 +8,7 @@ public class estimatingtheareaofacircle {
 				| (circle = scan.nextDouble()) != 0) {
 			double area = Math.PI * radius * radius;
 			double estArea = 4 * radius * radius * circle / marks;
-			System.out.println(String.format("%f %f", area, estArea));
+			System.out.printf("%f %f", area, estArea);
 		}
 		scan.close();
 	}
