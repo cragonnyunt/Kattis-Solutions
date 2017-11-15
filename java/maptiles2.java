@@ -29,7 +29,7 @@ public class maptiles2 {
 				break;
 			}
 		}
-		System.out.println(String.format("%d %d %d", zoom, limit_x_start, limit_y_start));
+		System.out.printf("%d %d %d", zoom, limit_x_start, limit_y_start);
 		scan.close();
 	}
 }
