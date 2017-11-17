@@ -7,7 +7,7 @@ public class snappereasy {
 		for (int i = 1; i <= T; i++) {
 			int N = scan.nextInt();
 			int K = scan.nextInt() + 1;
-			System.out.println("Case #" + i + ": " + (K % Math.pow(2, N) == 0 ? "ON" : "OFF"));
+			System.out.printf("Case #%d:%s%n", i, K % Math.pow(2, N) == 0 ? "ON" : "OFF");
 		}
 		scan.close();
 	}

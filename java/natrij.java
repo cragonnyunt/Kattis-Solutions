@@ -21,9 +21,9 @@ public class natrij {
 		int time_difference = time2 - time1;
 		if (time_difference <= 0)
 			time_difference += 86400;
-		System.out.print(padLeft(time_difference / 3600) + ":");
-		System.out.print(padLeft(time_difference % 3600 / 60) + ":");
-		System.out.print(padLeft(time_difference % 60));
+		System.out.printf("%s:", padLeft(time_difference / 3600));
+		System.out.printf("%s:", padLeft(time_difference % 3600 / 60));
+		System.out.printf("%s:", padLeft(time_difference % 60));
 		scan.close();
 	}
 }

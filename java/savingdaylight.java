@@ -16,8 +16,7 @@ public class savingdaylight {
 			int t2_min = Integer.parseInt(t2.split(":")[1]);
 			int t2_sec = t2_hr * 60 + t2_min;
 			int time_diff = t2_sec - t1_sec;
-			System.out.println(month + " " + day + " " + year + " " + (time_diff / 60) + " hours " + (time_diff % 60)
-					+ " minutes");
+			System.out.printf("%s %d %d %d hours %d minutes%n", month, day, year, time_diff / 60, time_diff % 60);
 		}
 		scan.close();
 	}

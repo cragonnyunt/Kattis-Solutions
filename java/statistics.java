@@ -13,7 +13,7 @@ public class statistics {
 				max = Math.max(max, num);
 				min = Math.min(min, num);
 			}
-			System.out.println("Case " + cases++ + ": " + min + " " + max + " " + (max - min));
+			System.out.printf("Case %d: %d %d %d%n", cases++, min, max, max - min);
 		}
 		scan.close();
 	}

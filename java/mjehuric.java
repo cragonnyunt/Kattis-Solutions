@@ -17,7 +17,7 @@ public class mjehuric {
 				p[index] = p[nextIndex];
 				p[nextIndex] = tmp;
 				for (int i : p)
-					System.out.print(i + " ");
+					System.out.printf("%d ", i);
 				System.out.println();
 			}
 			index = nextIndex;

@@ -10,14 +10,14 @@ public class securedoors {
 			switch (scan.next()) {
 			case "entry":
 				String name1 = scan.next();
-				System.out.print(name1 + " entered");
+				System.out.printf("%s entered", name1);
 				if (!room.add(name1))
 					System.out.print(" (ANOMALY)");
 				System.out.println();
 				break;
 			case "exit":
 				String name2 = scan.next();
-				System.out.print(name2 + " exited");
+				System.out.printf("%s exited", name2);
 				if (!room.remove(name2))
 					System.out.print(" (ANOMALY)");
 				System.out.println();

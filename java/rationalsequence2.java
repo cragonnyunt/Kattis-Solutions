@@ -18,9 +18,9 @@ public class rationalsequence2 {
 		int P = scan.nextInt();
 		while (P-- > 0) {
 			int K = scan.nextInt();
-			String n = scan.next();
-			int p = Integer.parseInt(n.split("/")[0]);
-			int q = Integer.parseInt(n.split("/")[1]);
+			String[] n = scan.next().split("/");
+			int p = Integer.parseInt(n[0]);
+			int q = Integer.parseInt(n[1]);
 			System.out.printf("%d %d", K, getN(p, q));
 		}
 		scan.close();

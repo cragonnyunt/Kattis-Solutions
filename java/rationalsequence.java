@@ -11,13 +11,13 @@ public class rationalsequence {
 			int q = Integer.parseInt(p_q[1]);
 			System.out.print(K + " ");
 			if (q == 1)
-				System.out.println(1 + "/" + (p + 1));
+				System.out.printf("%d/%d%n", 1, p + 1);
 			else if (q == 2)
-				System.out.println(q + "/" + p);
+				System.out.printf("%d/%d%n", q, p);
 			else if (p < q)
-				System.out.println(q + "/" + (q - p));
+				System.out.printf("%d/%d%n", q, q - p);
 			else
-				System.out.println(q + "/" + (q * (1 + p / q) - (p % q)));
+				System.out.printf("%d/%d%n", q, q * (1 + p / q) - (p % q));
 		}
 		scan.close();
 	}

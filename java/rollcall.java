@@ -23,7 +23,7 @@ public class rollcall {
 				roll.get(i).last_name = "";
 		}
 		for (Name n : roll)
-			System.out.println(n);
+			System.out.printf("%s %s%n", n.first_name, n.last_name);
 		scan.close();
 	}
 }
@@ -41,9 +41,5 @@ class Name implements Comparable<Name> {
 			return last_name.compareTo(o.last_name);
 		else
 			return first_name.compareTo(o.first_name);
-	}
-
-	public String toString() {
-		return first_name + " " + last_name;
 	}
 }

@@ -13,7 +13,7 @@ public class mirror {
 				for (int k = 0; k < C; k++)
 					image[j][k] = line.charAt(k);
 			}
-			System.out.println("Test " + i);
+			System.out.printf("Test %d%n", i);
 			for (int j = R - 1; j >= 0; j--) {
 				for (int k = C - 1; k >= 0; k--)
 					System.out.print(image[j][k]);

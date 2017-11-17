@@ -19,10 +19,10 @@ public class notamused {
 					minute_m = log.get(customer);
 				log.put(customer, minute - minute_m);
 			}
-			System.out.println("Day " + count++);
+			System.out.printf("Day %d%n", count++);
 			DecimalFormat df = new DecimalFormat("0.00");
 			for (String name : log.keySet())
-				System.out.println(name + " $" + df.format(log.get(name) * 0.1));
+				System.out.printf("%s $%s%n", name, df.format(log.get(name) * 0.1));
 		}
 		scan.close();
 	}

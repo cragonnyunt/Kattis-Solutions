@@ -19,7 +19,7 @@ public class quickbrownfox {
 				StringBuilder sb = new StringBuilder();
 				for (char c : alphabets)
 					sb.append(c);
-				System.out.println("missing " + sb);
+				System.out.printf("missing %s", sb);
 			}
 		}
 		scan.close();
