@@ -34,10 +34,8 @@ public class bits {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int T = scan.nextInt();
-		while (T-- > 0) {
-			int X = scan.nextInt();
-			System.out.println(getBit(X));
-		}
+		while (T-- > 0)
+			System.out.println(getBit(scan.nextInt()));
 		scan.close();
 	}
 }

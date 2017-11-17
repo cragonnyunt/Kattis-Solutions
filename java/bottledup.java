@@ -15,9 +15,9 @@ public class bottledup {
 			}
 		}
 		if (a + b == 0)
-			System.out.println("Impossible");
+			System.out.printf("Impossible");
 		else
-			System.out.println(a + " " + b);
+			System.out.printf("%d %d", a, b);
 		scan.close();
 	}
 }

@@ -8,10 +8,10 @@ public class busyschedule {
 		while ((n = scan.nextInt()) != 0) {
 			scan.nextLine();
 			Time[] schedule = new Time[n];
-			for(int i = 0; i < n; i++)
+			for (int i = 0; i < n; i++)
 				schedule[i] = new Time(scan.nextLine());
 			Arrays.sort(schedule);
-			for(int i = 0; i < n; i++)
+			for (int i = 0; i < n; i++)
 				System.out.println(schedule[i]);
 			System.out.println();
 		}
@@ -23,7 +23,7 @@ class Time implements Comparable<Time> {
 	int hour;
 	int minute;
 	String meridiem;
-	
+
 	public Time(String t) {
 		String[] t_1 = t.split(" ");
 		meridiem = t_1[1];
@@ -47,8 +47,8 @@ class Time implements Comparable<Time> {
 		else
 			return minute - other.minute;
 	}
-	
+
 	public String toString() {
-		return hour + ":" + ("00" + minute).substring(String.valueOf(minute).length()) + " " + meridiem;
+		return String.format("%d:%s %s", hour, ("00" + minute).substring(String.valueOf(minute).length()), meridiem);
 	}
 }

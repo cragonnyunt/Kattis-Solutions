@@ -26,10 +26,8 @@ public class alphabetspam {
 			if (isSymbol)
 				ct_symbol++;
 		}
-		System.out.println(ct_whitespace / count);
-		System.out.println(ct_lowercase / count);
-		System.out.println(ct_uppercase / count);
-		System.out.println(ct_symbol / count);
+		System.out.printf("%f%n%f%n%f%n%f", ct_whitespace / count, ct_lowercase / count, ct_uppercase / count,
+				ct_symbol / count);
 		scan.close();
 	}
 }

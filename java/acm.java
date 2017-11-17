@@ -24,7 +24,7 @@ public class acm {
 		for (int i = 0; i < time.size(); i++)
 			if (!isRight.get(i) && solved.contains(problem.get(i)))
 				total_time += 20;
-		System.out.println(prob_coun + " " + total_time);
+		System.out.printf("%d %d", prob_coun, total_time);
 		scan.close();
 	}
 }

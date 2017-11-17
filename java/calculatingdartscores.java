@@ -49,8 +49,7 @@ public class calculatingdartscores {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
-		System.out.println(dart[n]);
+		System.out.println(dart[scan.nextInt()]);
 		scan.close();
 	}
 }

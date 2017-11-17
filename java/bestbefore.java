@@ -29,7 +29,7 @@ public class bestbefore {
 			}
 		}
 		if (!isValid)
-			System.out.println(input_date_str + " is illegal");
+			System.out.printf("%s is illegal", input_date_str);
 		scan.close();
 	}
 }

@@ -31,7 +31,7 @@ public class acm2 {
 				}
 			}
 		}
-		System.out.println(num_ac + " " + penalty_time);
+		System.out.printf("%d %d", num_ac, penalty_time);
 		scan.close();
 	}
 }

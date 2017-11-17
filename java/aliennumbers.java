@@ -18,7 +18,7 @@ public class aliennumbers {
 				translated_number.insert(0, target_lang.charAt(d));
 				toBase10 /= target_lang.length();
 			}
-			System.out.println("Case #" + i + ": " + translated_number);
+			System.out.printf("Case #%d: %s%n", i, translated_number);
 		}
 		scan.close();
 	}

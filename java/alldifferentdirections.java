@@ -36,7 +36,7 @@ public class alldifferentdirections {
 			double worse = 0.0;
 			for (Point p : pt_list)
 				worse = Math.max(worse, avg_pt.getDistance(p));
-			System.out.println(avg_pt.x + " " + avg_pt.y + " " + worse);
+			System.out.printf("%f %f %f%n", avg_pt.x, avg_pt.y, worse);
 		}
 		scan.close();
 	}

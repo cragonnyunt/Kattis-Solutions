@@ -88,7 +88,7 @@ public class _2048 {
 		}
 		for (int row = 0; row < 4; row++) {
 			for (int col = 0; col < 4; col++)
-				System.out.print(tiles[row][col] + " ");
+				System.out.printf("%d ", tiles[row][col]);
 			System.out.println();
 		}
 		scan.close();
