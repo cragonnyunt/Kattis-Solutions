@@ -25,7 +25,7 @@ public class imageprocessing {
 						sum += image[x][y] * kernel[kX][kY--];
 					kX--;
 				}
-				System.out.print(sum + " ");
+				System.out.printf("%d ", sum);
 			}
 			System.out.println();
 		}

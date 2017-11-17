@@ -21,9 +21,9 @@ public class matrix {
 			int y = getX(a, b, c, d);
 			int z = getY(c, d, a, b);
 			int w = getY(a, b, c, d);
-			System.out.println("Case " + count++ + ":");
-			System.out.println(x + " " + y);
-			System.out.println(z + " " + w);
+			System.out.printf("Case %d:%n", count++);
+			System.out.printf("%d %d%n", x, y);
+			System.out.printf("%d %d%n", z, w);
 		}
 		scan.close();
 	}

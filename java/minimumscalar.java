@@ -18,7 +18,7 @@ public class minimumscalar {
 			long product = 0;
 			for (int index = 0; index < n; index++)
 				product += v1[index] * v2[n - index - 1];
-			System.out.println("Case #" + i + ": " + product);
+			System.out.printf("Case #%d: %d%n", i, product);
 		}
 		scan.close();
 	}

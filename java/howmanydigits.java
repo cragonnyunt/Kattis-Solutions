@@ -11,10 +11,8 @@ public class howmanydigits {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		while (scan.hasNextInt()) {
-			int num = scan.nextInt();
-			System.out.println((int) Math.floor(bases[num]));
-		}
+		while (scan.hasNextInt())
+			System.out.println((int) Math.floor(bases[scan.nextInt()]));
 		scan.close();
 	}
 }

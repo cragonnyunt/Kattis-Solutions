@@ -34,7 +34,7 @@ public class matchsticks {
 				largest.append("1");
 			if (number % 2 != 0)
 				largest.setCharAt(0, '7');
-			System.out.println(smallest[number - 2] + " " + largest);
+			System.out.printf("%s %s%n", smallest[number - 2], largest);
 		}
 		scan.close();
 	}
