@@ -7,17 +7,17 @@ int main()
 	cin >> n;
 	while(n--)
 	{
-		char buffer[7];
-		cin >> buffer;
-		int index = strlen(buffer) - 1;
-		while (index > 0 && buffer[index] == '0')
+		char X[10];
+		cin >> X;
+		int index = strlen(X) - 1;
+		while (index > 0 && X[index] == '0')
 			index--;
-		if (index == 0 && buffer[index] == '1')
+		if (index == 0 && X[index] == '1')
 			cout << "0" << endl;
 		else
 		{
-			buffer[index] = (char)(buffer[index] - 1);
-			cout << buffer << endl;
+			X[index] = (char)(X[index] - 1);
+			cout << X << endl;
 		}
 	}
 	return 0;
