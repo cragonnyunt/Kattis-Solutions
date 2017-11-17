@@ -16,20 +16,17 @@ public class vacuumba {
 				double direction_radian = direction * Math.PI / 180;
 				double radian_cos = Math.cos(direction_radian);
 				double radian_sin = Math.sin(direction_radian);
-                if (direction == 90)
-                {
-                    radian_cos = 0;
-                    radian_sin = 1;
-                }
-                else if(direction == -90)
-                {
-                    radian_cos = 0;
-                    radian_sin = -1;
-                }
+				if (direction == 90) {
+					radian_cos = 0;
+					radian_sin = 1;
+				} else if (direction == -90) {
+					radian_cos = 0;
+					radian_sin = -1;
+				}
 				X += distance * radian_cos;
 				Y += distance * radian_sin;
 			}
-			System.out.println(X + " " + Y);
+			System.out.printf("%f %f%n", X, Y);
 		}
 		scan.close();
 	}

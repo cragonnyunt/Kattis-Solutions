@@ -45,9 +45,9 @@ public class towering {
 		Collections.sort(first);
 		Collections.sort(second);
 		for (int i = first.size() - 1; i >= 0; i--)
-			System.out.print(first.get(i) + " ");
+			System.out.printf("%d ", first.get(i));
 		for (int i = second.size() - 1; i >= 0; i--)
-			System.out.print(second.get(i) + " ");
+			System.out.printf("%d ", second.get(i));
 		scan.close();
 	}
 }

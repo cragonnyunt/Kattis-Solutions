@@ -16,7 +16,7 @@ public class whatdoesthefoxsay {
 			}
 			for(String s : sounds)
 				if(!s.isEmpty())
-					System.out.print(s + " ");
+					System.out.printf("%s ", s);
 			System.out.println();
 		}
 		scan.close();

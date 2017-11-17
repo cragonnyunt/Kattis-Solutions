@@ -40,7 +40,7 @@ public class t9spelling {
 					sb.append(keyCode);
 				lastKey = keyCode;
 			}
-			System.out.println("Case #" + i + ": " + sb);
+			System.out.printf("Case #%d %s%n", i, sb);
 		}
 		scan.close();
 	}

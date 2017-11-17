@@ -7,7 +7,7 @@ public class sumkindofproblem {
 		while (P-- > 0) {
 			int K = scan.nextInt();
 			int N = scan.nextInt();
-			System.out.println(K + " " + N * (N + 1) / 2 + " " + N * N + " " + N * (N + 1));
+			System.out.printf("%d %d %d %d%n", K, N * (N + 1) / 2, N * N, N * (N + 1));
 		}
 		scan.close();
 	}

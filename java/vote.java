@@ -23,9 +23,9 @@ public class vote {
 			if (hasTwoMax)
 				System.out.println("no winner");
 			else if (maxVote > sumVote / 2)
-				System.out.println("majority winner " + maxIndex);
+				System.out.printf("majority winner %d%n", maxIndex);
 			else
-				System.out.println("minority winner " + maxIndex);
+				System.out.printf("minority winner %d%n", maxIndex);
 		}
 		scan.close();
 	}

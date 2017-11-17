@@ -23,7 +23,7 @@ public class textureanalysis {
 				} else
 					count_white++;
 			}
-			System.out.println(count++ + " " + (isEven ? "EVEN" : "NOT EVEN"));
+			System.out.printf("%d %s%n", count++, isEven ? "EVEN" : "NOT EVEN");
 		}
 		scan.close();
 	}

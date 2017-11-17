@@ -34,7 +34,7 @@ public class wordsfornumbers {
 			}
 			words[0] = words[0].substring(0, 1).toUpperCase() + words[0].substring(1);
 			for(String s : words)
-				System.out.print(s + " ");
+				System.out.printf("%s ", s);
 			System.out.println();
 		}
 		scan.close();

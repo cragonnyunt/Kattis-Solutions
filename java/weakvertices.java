@@ -27,7 +27,7 @@ public class weakvertices {
 							}
 				}
 				if (isWeak)
-					System.out.print(i + " ");
+					System.out.printf("%d ", i);
 			}
 			System.out.println();
 		}
