@@ -54,7 +54,7 @@ public class hidingplaces {
 			for (int i = 0; i < 8; i++)
 				for (int j = 0; j < 8; j++)
 					if (chessBoard[i][j] == maxlevel)
-						System.out.print(String.valueOf((char) ('a' + j)) + (8 - i) + " ");
+						System.out.printf("%c%d ", (char) ('a' + j), (8 - i));
 			System.out.println();
 		}
 		scan.close();
