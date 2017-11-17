@@ -12,11 +12,11 @@ public class eligibility {
 			int postYear = Integer.parseInt(postDate.split("/")[0]);
 			int DoBYear = Integer.parseInt(DoB.split("/")[0]);
 			if (postYear >= 2010 || DoBYear >= 1991)
-				System.out.println(name + " eligible");
+				System.out.printf("%s eligible%n", name);
 			else if (courses >= 41)
-				System.out.println(name + " ineligible");
+				System.out.printf("%s ineligible%n", name);
 			else
-				System.out.println(name + " coach petitions");
+				System.out.printf("%s coach petitions%n", name);
 		}
 		scan.close();
 	}

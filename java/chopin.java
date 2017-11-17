@@ -16,8 +16,7 @@ public class chopin {
 					ch = 'A';
 				else if (note.charAt(0) == 'A' && inc == -1)
 					ch = 'G';
-				System.out
-						.println("Case " + cases++ + ": " + ch + (note.charAt(1) == '#' ? 'b' : '#') + " " + tonality);
+				System.out.printf("Case %d: %c%c %s%n", cases++, ch, (note.charAt(1) == '#' ? 'b' : '#'), tonality);
 			}
 		}
 		scan.close();

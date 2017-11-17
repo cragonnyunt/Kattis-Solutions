@@ -15,14 +15,12 @@ public class completingthesquare {
 		int y2 = scan.nextInt();
 		int x3 = scan.nextInt();
 		int y3 = scan.nextInt();
-		if (getDistanceSqrt(x2, y2, x3, y3) == getDistanceSqrt(x1, y1, x2, y2) + getDistanceSqrt(x1, y1, x3, y3)) {
-			System.out.println((-x1 + x2 + x3) + " " + (-y1 + y2 + y3));
-		} else if (getDistanceSqrt(x1, y1, x3, y3) == getDistanceSqrt(x2, y2, x1, y1)
-				+ getDistanceSqrt(x2, y2, x3, y3)) {
-			System.out.println((x1 - x2 + x3) + " " + (y1 - y2 + y3));
-		} else {
-			System.out.println((x1 + x2 - x3) + " " + (y1 + y2 - y3));
-		}
+		if (getDistanceSqrt(x2, y2, x3, y3) == getDistanceSqrt(x1, y1, x2, y2) + getDistanceSqrt(x1, y1, x3, y3))
+			System.out.printf("%d %d", -x1 + x2 + x3, -y1 + y2 + y3);
+		else if (getDistanceSqrt(x1, y1, x3, y3) == getDistanceSqrt(x2, y2, x1, y1) + getDistanceSqrt(x2, y2, x3, y3))
+			System.out.printf("%d %d", x1 - x2 + x3, y1 - y2 + y3);
+		else
+			System.out.printf("%d %d", x1 + x2 - x3, y1 + y2 - y3);
 		scan.close();
 	}
 }

@@ -23,7 +23,7 @@ public class enlarginghashtables {
 					nextPrime = d_n;
 					break;
 				}
-			System.out.println(nextPrime + (!isPrime(n) ? " (" + n + " is not prime)" : ""));
+			System.out.printf("%d%s%n", nextPrime, !isPrime(n) ? " (" + n + " is not prime)" : "");
 		}
 		scan.close();
 	}

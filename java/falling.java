@@ -6,7 +6,7 @@ public class falling {
 		int input = scan.nextInt();
 		int X = -1;
 		int minXSum = Integer.MAX_VALUE;
-		for (int i = 1; i <= Math.sqrt(input); i++) {
+		for (int i = 1; i <= Math.ceil(Math.sqrt(input)); i++) {
 			if (input % i == 0) {
 				int factor = input / i;
 				if ((i + factor) % 2 == 0)
@@ -22,7 +22,7 @@ public class falling {
 			int Y = input / X;
 			int a = (Y + X) / 2;
 			int b = (Y - X) / 2;
-			System.out.println(b + " " + a);
+			System.out.printf("%d %d", b, a);
 		}
 		scan.close();
 	}

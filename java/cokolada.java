@@ -19,7 +19,7 @@ public class cokolada {
 			pow--;
 			breaks = 0;
 		}
-		System.out.println((int)Math.pow(2, pow) + " " + breaks);
+		System.out.printf("%d %d", (int) Math.pow(2, pow), breaks);
 		scan.close();
 	}
 }
