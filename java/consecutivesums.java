@@ -1,4 +1,3 @@
-import java.io.Console;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -6,8 +5,8 @@ public class consecutivesums {
 	static final HashMap<Integer, Integer> partial_sums = new HashMap<>(565);
 
 	static {
-		int N;
-		for (int i = 2; (N = i * (i + 1) / 2) < 1000000000; i++)
+		int N = 1;
+		for (int i = 2; (N += i) < 1000000000; i++)
 			partial_sums.put(i, N);
 	}
 
