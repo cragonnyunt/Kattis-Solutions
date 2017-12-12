@@ -24,11 +24,10 @@ public class wordsfornumbers {
 					if (num < 20) {
 						words[i] = ws[num];
 					} else {
-						if (num % 10 == 0) {
+						if (num % 10 == 0)
 							words[i] = tenth[num / 10 - 2];
-						} else {
+						else
 							words[i] = tenth[num / 10 - 2] + "-" + digits[num % 10 - 1];
-						}
 					}
 				}
 			}
