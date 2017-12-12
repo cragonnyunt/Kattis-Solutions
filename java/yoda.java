@@ -8,11 +8,9 @@ public class yoda {
 		return (new String(zeros) + str).substring(str.length());
 	}
 
-	static String collide(String str1, String str2)
-	{
+	static String collide(String str1, String str2) {
 		StringBuilder sb = new StringBuilder();
-		for(int i = 0; i < str1.length(); i++)
-		{
+		for(int i = 0; i < str1.length(); i++) {
 		    int _s = Character.getNumericValue(str1.charAt(i));
 		    int _o = Character.getNumericValue(str2.charAt(i));
 		    if (_s >= _o)
@@ -21,8 +19,7 @@ public class yoda {
 		String s = sb.toString();
 		if (s.isEmpty())
 		    return "YODA";
-		else
-		{
+		else {
 			s = s.replaceFirst("^0+(?!$)", "");
 		    if (s.isEmpty())
 			return "0";
