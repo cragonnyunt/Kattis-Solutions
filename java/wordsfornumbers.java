@@ -21,9 +21,9 @@ public class wordsfornumbers {
 			for (int i = 0; i < words.length; i++) {
 				if (isNumber(words[i])) {
 					int num = Integer.parseInt(words[i]);
-					if (num < 20) {
+					if (num < 20)
 						words[i] = ws[num];
-					} else {
+					else {
 						if (num % 10 == 0)
 							words[i] = tenth[num / 10 - 2];
 						else
