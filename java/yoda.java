@@ -9,27 +9,27 @@ public class yoda {
 	}
 
 	static String collide(String str1, String str2)
-    {
-        StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < str1.length(); i++)
-        {
-            int _s = Character.getNumericValue(str1.charAt(i));
-            int _o = Character.getNumericValue(str2.charAt(i));
-            if (_s >= _o)
-                sb.append(_s);
-        }
-        String s = sb.toString();
-        if (s.isEmpty())
-            return "YODA";
-        else
-        {
-        	s = s.replaceFirst("^0+(?!$)", "");
-            if (s.isEmpty())
-                return "0";
-            else
-                return s;
-        }
-    }
+	{
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0; i < str1.length(); i++)
+		{
+		    int _s = Character.getNumericValue(str1.charAt(i));
+		    int _o = Character.getNumericValue(str2.charAt(i));
+		    if (_s >= _o)
+			sb.append(_s);
+		}
+		String s = sb.toString();
+		if (s.isEmpty())
+		    return "YODA";
+		else
+		{
+			s = s.replaceFirst("^0+(?!$)", "");
+		    if (s.isEmpty())
+			return "0";
+		    else
+			return s;
+		}
+	}
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
