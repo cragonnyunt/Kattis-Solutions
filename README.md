@@ -10,7 +10,7 @@ More new solutions are going to be added soon
 
 [Go to my Kattis Profile](https://open.kattis.com/users/khin-nyunt)
 
-Having any suggestions or improvements, send email to <khinnyunt@uit.edu.mm>
+Having any suggestions or improvements, send email to <khinnyunt@uit.edu.mm> or <mknyunt97@gmail.com>
 
 ---
 *Notes
