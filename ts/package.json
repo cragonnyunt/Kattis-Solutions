@@ -1,0 +1,38 @@
+{
+  "name": "kattis",
+  "version": "1.0.0",
+  "description": "Kattis Solution in Typescript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cragonnyunt/Kattis-Solutions.git"
+  },
+  "keywords": [
+    "java",
+    "programming-exercise"
+  ],
+  "author": "cragonnyunt",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cragonnyunt/Kattis-Solutions/issues"
+  },
+  "homepage": "https://github.com/cragonnyunt/Kattis-Solutions#readme",
+  "dependencies": {
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1"
+  }
+}
